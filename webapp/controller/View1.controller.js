@@ -1,4 +1,4 @@
-sap.ui.define(["sap/ui/core/mvc/Controller", "soap/libs/jquerysoap"], function(Controller, jquerysoapjs) {
+sap.ui.define(["sap/ui/core/mvc/Controller"], function(Controller) {
 	"use strict";
 	return Controller.extend("soap.controller.View1", {
 
