@@ -1,0 +1,35 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" controllerName="soap.controller.View1" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<form:Form editable="true" id="__form0">
+						<form:formContainers>
+							<form:FormContainer title="Temperature Calculator" id="__container1">
+								<form:formElements>
+									<form:FormElement label="From Fahrenheit" id="FahrenheitFormID">
+										<form:fields>
+											<Input width="100%" id="nDegreeFahrenheitID" maxLength="3" type="Number" value="0"/>
+										</form:fields>
+									</form:FormElement>
+									<form:FormElement label="To Celsius" id="CelsiusFormID">
+										<form:fields>
+											<Input width="100%" id="nDegreeCelsiusID" editable="false" type="Number"/>
+										</form:fields>
+									</form:FormElement>
+								</form:formElements>
+							</form:FormContainer>
+						</form:formContainers>
+						<form:layout>
+							<form:ResponsiveGridLayout id="__layout0"/>
+						</form:layout>
+					</form:Form>
+				</content>
+				<headerContent>
+					<Button text="Go GET" width="100px" id="__button1" press="onGoGET"/>
+					<Button text="Go POST" width="100px" id="__button2" press="onGoPOST"/>
+				</headerContent>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
